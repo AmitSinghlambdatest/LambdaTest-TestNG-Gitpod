@@ -27,7 +27,9 @@ public class ParallelTest {
 	// Lambdatest Credentails can be found here at https://www.lambdatest.com/capabilities-generator
 	String username = System.getenv("LT_USERNAME") == null ? "YOUR LT_USERNAME" : System.getenv("LT_USERNAME"); 
 	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "YOUR LT_ACCESS_KEY" : System.getenv("LT_ACCESS_KEY");
-
+        String buildName = System.getenv("LT_BUILD_NAME") == null ? "TestNG Parallel" : System.getenv("LT_BUILD_NAME");
+	
+	
 	public static WebDriver driver;
 
 	@BeforeTest(alwaysRun = true)
