@@ -42,6 +42,7 @@ public class ParallelTest {
 		capabilities.setCapability(CapabilityType.VERSION, version);
 		capabilities.setCapability(CapabilityType.PLATFORM, platform);
 		capabilities.setCapability("build", "TestNG Parallel");
+		capabilities.setCapability("build", buildName);
 		capabilities.setCapability("name", "TestNG Parallel");
 		capabilities.setCapability("network", true);
 		capabilities.setCapability("video", true);
